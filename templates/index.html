@@ -8,7 +8,7 @@
         {% for order in all_orders %}
             <div>
                 <p>
-                    Customer: {{ order.customer_name }}
+                    Customer: <a href="/orders/{{ all_orders.index(order) }}">{{ order.customer_name }}</a>
                 </p>
             </div>
         {% endfor %}
