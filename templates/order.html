@@ -1,0 +1,11 @@
+<html>
+    <head>
+       <title>{{ all_orders[order_num].customer_name }}</title>
+    </head>
+    <body>
+        <h1>Order details:</h1>
+        <h2>{{ all_orders[order_num].customer_name }}, date: {{ all_orders[order_num].order_date }}</h1>
+        <p>Product: {{ all_orders[order_num].product }}</p>
+        <p>Quantity: {{ all_orders[order_num].quantity }}</p>    
+    </body>
+</html>
