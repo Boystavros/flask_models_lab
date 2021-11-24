@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Bar Supply Orders</title>
+    </head>
+    <body>
+        <h1>My Bar Supply Orders</h1>
+        <h2>Current orders:</h2>
+        {% for order in all_orders %}
+            <div>
+                <p>
+                    Customer: {{ order.customer_name }}
+                </p>
+            </div>
+        {% endfor %}
+    </body>
+</html>
